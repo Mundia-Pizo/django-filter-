@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    display:flex;
+    
+}
+.overal-card{
+    width: 40%;
+    border:1px lightgray solid;
+    padding: 0 4px 0 4px;
+    margin:25px 4px 0 4px;
+    display: flex;
+}
+.cards{
+    width: 40%;
+    height: 120px;
+    flex-direction: column;
+}

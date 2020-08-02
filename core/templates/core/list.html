@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'css/main.css'%}>
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="overal-card">
+            {%for lady in items%}
+            <div class="card">
+                <img src="{{ lady.image.url }}" alt="my image">
+                 <h1>{{lady.title}}</h1>
+                 <small> {{lady.category}}</small> 
+            </div>
+           {%endfor%}
+
+        </div>
+        
+        <!-- <div class="overal-card"> 
+            {%for baby in babies%}
+                <img src="{{baby.image.url}}" alt="">
+                {{baby.category}}
+                <h1>{{baby.title}}</h1>
+            {%endfor%}
+        </div>
+
+        <div class="overal-card">
+            {%for man in men%}
+                <img src="{{object.image.url}}" alt="">
+                <small>{{man.category}}</small>
+                <h1>{{man.title}}</h1>
+             {%endfor%} 
+        </div> -->
+    </section>
+    
+    
+</body>
+</html>
